@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .content {
@@ -12,6 +13,7 @@
   margin-top: 40px;
   margin-left: 163px;
   flex-direction: column;
+  height: 100vh;
 }
 
 .page-title {

@@ -1,0 +1,61 @@
+.item-container {
+  padding: 25px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+.item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #2b416c;
+}
+
+.item-text-italics {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  color: #7788a3;
+}
+
+.item-campaign {
+  display: flex;
+}
+
+.item-image {
+  width: 40px;
+  height: 40px;
+}
+
+.item-actions-image {
+  width: 24px;
+  height: 24px;
+}
+
+.item-campaign-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.item-view {
+  display: flex;
+  cursor: pointer;
+}
+
+.pricing-text {
+  padding: 0 6px;
+  font-size: 14px;
+}
+
+.item-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
