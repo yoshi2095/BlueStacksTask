@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: 163px;
+  flex-direction: column;
+}
+
+.page-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  /* identical to box height, or 104% */
+
+  color: #2b416c;
+}

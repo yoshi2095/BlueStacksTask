@@ -1,0 +1,31 @@
+.TabContent {
+  width: 100%;
+}
+
+.TabsHeader {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #556789;
+
+  border-bottom: 1px solid rgb(252, 230, 230);
+}
+
+.SubTabsHeader {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+}
+
+.Tab {
+  padding: 16px 24px;
+  cursor: pointer;
+}
+
+.Tab.Selected {
+  color: #83a515;
+  /*width: fit-content;*/
+  font-weight: 500;
+  border-bottom: 2px solid #83a515;
+}
