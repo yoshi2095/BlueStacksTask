@@ -5,7 +5,7 @@ import stats_icon from "../../assets/images/Page 1/Dashboard/Row Copy 2-Row/Grou
 import file_icon from "../../assets/images/Page 1/Dashboard/Row Copy 2-Row/Group 3/file.png";
 import calendar_icon from "../../assets/images/Page 1/Dashboard/Row Copy 2-Row/Group/calendar.png";
 
-export default function({ item, ...props }) {
+export default function({ item, handleViewPricing, ...props }) {
   return (
     <div className="item-container">
       <div className="item-date">
@@ -18,12 +18,19 @@ export default function({ item, ...props }) {
           <div className="item-text" style={{ lineHeight: "normal" }}>
             {item.name}
           </div>
-          <div className="item-text-italics">US</div>
+          <div className="item-text-italics">{item.region}</div>
         </div>
       </div>
       <div className="item-view">
         <img src={price_icon} className="item-actions-image" />
-        <div className="item-text pricing-text">View Pricing</div>
+        <div
+          className="item-text pricing-text"
+          onClick={() => {
+            handleViewPricing(item);
+          }}
+        >
+          View Pricing
+        </div>
       </div>
       <div className="item-actions">
         <div className="item-view">

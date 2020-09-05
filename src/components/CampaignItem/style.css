@@ -1,7 +1,10 @@
 .item-container {
-  padding: 25px 20px;
+  margin: 0 20px;
+  padding: 25px 0;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr;
+  border-bottom: 1px solid #ececec;
+  align-items: center;
 }
 
 .item-text {
