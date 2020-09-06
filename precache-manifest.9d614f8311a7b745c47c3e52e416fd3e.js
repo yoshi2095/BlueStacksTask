@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d24f9e5455c0aae5910267d9b17c0e41",
+    "revision": "cd6cf0ae7cb7119c364f00128e48f5b2",
     "url": "/BlueStacksTask/index.html"
   },
   {
-    "revision": "dccca8a6732916d0b62b",
-    "url": "/BlueStacksTask/static/css/main.30021a4a.chunk.css"
+    "revision": "10c92d209770052827dc",
+    "url": "/BlueStacksTask/static/css/main.95ddc607.chunk.css"
   },
   {
-    "revision": "6d45a37e022b51b39124",
-    "url": "/BlueStacksTask/static/js/2.98f7a148.chunk.js"
+    "revision": "dc079e7d88f316e450ae",
+    "url": "/BlueStacksTask/static/js/2.b75deed1.chunk.js"
   },
   {
     "revision": "849657740f66d00720db130cc1e94c97",
-    "url": "/BlueStacksTask/static/js/2.98f7a148.chunk.js.LICENSE.txt"
+    "url": "/BlueStacksTask/static/js/2.b75deed1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dccca8a6732916d0b62b",
-    "url": "/BlueStacksTask/static/js/main.df88c702.chunk.js"
+    "revision": "10c92d209770052827dc",
+    "url": "/BlueStacksTask/static/js/main.0cc2ec14.chunk.js"
   },
   {
     "revision": "f0cf2ca2b58490529883",
