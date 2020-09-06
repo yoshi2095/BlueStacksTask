@@ -2,6 +2,7 @@ import thumb1 from "../assets/images/Page 1/Dashboard/Row/Thumb/Bitmap.png";
 import thumb2 from "../assets/images/Page 1/Dashboard/Row Copy 2-Row/Thumb/Bitmap.png";
 import thumb3 from "../assets/images/Page 1/Dashboard/Row Copy 3-Row/Thumb/Bitmap.png";
 import thumb4 from "../assets/images/Page 1/Dashboard/Row Copy 4-Row/Thumb/Bitmap.png";
+import moment from "moment";
 
 export const response = {
   data: [
@@ -9,7 +10,9 @@ export const response = {
       id: "one",
       name: "Test Whatsapp",
       region: "US",
-      createdOn: 1559807714999,
+      createdOn: moment()
+        .add(4, "days")
+        .valueOf(),
       price: {
         monthly: "$ 100",
         halfYearly: "$ 500",
@@ -51,7 +54,7 @@ export const response = {
       id: "four",
       name: "Mancala Mix",
       region: "JP",
-      createdOn: 1559806680124,
+      createdOn: moment().valueOf(),
       price: {
         monthly: "$ 400",
         halfYearly: "$ 2000",
