@@ -11,3 +11,9 @@
 .header-img {
   margin-left: 147px;
 }
+
+@media (max-width: 600px) {
+  .header-img {
+    margin-left: 50px;
+  }
+}

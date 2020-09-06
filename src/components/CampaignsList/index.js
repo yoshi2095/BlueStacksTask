@@ -59,6 +59,7 @@ export default class CampaignsList extends React.Component {
     let { handleReschedule } = this.props;
     return (
       <div className="list-container">
+        <div className="list-header-mobile">Campaigns</div>
         <div className="list-header">
           <div className="list-header-item">DATE</div>
           <div className="list-header-item">CAMPAIGN</div>
@@ -80,7 +81,6 @@ export default class CampaignsList extends React.Component {
           <PricingModal
             onClose={this.handleClose.bind(this)}
             shown={showModal}
-            width="400px"
             selectedItem={selectedItem}
           />
         ) : null}

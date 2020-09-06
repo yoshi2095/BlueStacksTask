@@ -25,3 +25,13 @@
 
   color: #2b416c;
 }
+
+@media (max-width: 600px) {
+  .content {
+    margin-left: 50px;
+    width: 73%;
+  }
+  .page-title {
+    font-size: 28px;
+  }
+}

@@ -13,15 +13,26 @@ export default function Tabs({
     <div className="TabContainer">
       <div className="TabsHeader">
         {tabs.map(tab => (
-          <div
-            className={`Tab ${
-              tab.tabCategory == selectedTabId ? "Selected" : ""
-            }`}
-            onClick={() => selectTab(tab.tabCategory)}
-            key={tab.tabCategory}
-          >
-            {tab.tabName} Campaigns
-          </div>
+          <>
+            <div
+              className={`Tab ${
+                tab.tabCategory == selectedTabId ? "Selected" : ""
+              }`}
+              onClick={() => selectTab(tab.tabCategory)}
+              key={tab.tabCategory}
+            >
+              {tab.tabName} Campaigns
+            </div>
+            <div
+              className={`TabMobile ${
+                tab.tabCategory == selectedTabId ? "Selected" : ""
+              }`}
+              onClick={() => selectTab(tab.tabCategory)}
+              key={tab.tabCategory}
+            >
+              {tab.tabName}
+            </div>
+          </>
         ))}
       </div>
       <CampaignsList

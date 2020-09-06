@@ -23,9 +23,31 @@
   cursor: pointer;
 }
 
+.TabMobile {
+  padding: 16px 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.TabMobile.Selected {
+  color: #83a515;
+  /*width: fit-content;*/
+  font-weight: 500;
+  border-bottom: 2px solid #83a515;
+}
+
 .Tab.Selected {
   color: #83a515;
   /*width: fit-content;*/
   font-weight: 500;
   border-bottom: 2px solid #83a515;
+}
+
+@media (max-width: 600px) {
+  .Tab {
+    display: none;
+  }
+  .TabMobile {
+    display: flex;
+  }
 }

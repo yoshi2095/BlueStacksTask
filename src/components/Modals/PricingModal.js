@@ -17,16 +17,6 @@ export default class modal extends React.Component {
   render() {
     let { props } = this;
     let { onClose, selectedItem } = props;
-    let style = props.width
-      ? {
-          width: props.width,
-          margin: `120px auto`,
-          outline: "none"
-        }
-      : {};
-    if (props.style) {
-      style = { ...style, ...props.style };
-    }
     return (
       <div className="Modal-Container">
         <div className="Backdrop" onClick={() => {}}></div>
@@ -34,7 +24,6 @@ export default class modal extends React.Component {
           ref={this.dialogRef}
           className="Content dialogCoustom"
           tabindex="100"
-          style={style}
         >
           <div className="modal-content">
             <div className="modal-img-div">
