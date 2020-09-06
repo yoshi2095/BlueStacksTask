@@ -50,6 +50,7 @@
 .item-view {
   display: flex;
   cursor: pointer;
+  position: relative;
 }
 
 .pricing-text {
@@ -62,4 +63,12 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.date-picker {
+  position: absolute;
+  margin-top: 32px;
+  background: white;
+  right: 0;
+  z-index: 1;
 }

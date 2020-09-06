@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Header from "../Header";
 import Tabs from "../Tabs";
+import { response } from "../../utils/jsonData";
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -21,12 +22,25 @@ export default class HomePage extends React.Component {
           tabName: "Past"
         }
       ],
-      selectedTabId: 1
+      selectedTabId: 1,
+      data: JSON.parse(JSON.stringify(response.data))
     };
   }
 
+  handleReschedule(time, item) {
+    let { data } = this.state;
+    let selectedCampaign = data.find(camp => {
+      return camp.id === item.id;
+    });
+    selectedCampaign.createdOn = time;
+
+    this.setState({
+      data
+    });
+  }
+
   render() {
-    let { tabs, selectedTabId } = this.state;
+    let { tabs, selectedTabId, data } = this.state;
     return (
       <div className="container">
         <Header />
@@ -38,6 +52,8 @@ export default class HomePage extends React.Component {
             }}
             selectedTabId={selectedTabId}
             tabs={tabs}
+            data={data}
+            handleReschedule={this.handleReschedule.bind(this)}
           />
         </div>
       </div>
